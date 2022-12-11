@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Verification
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body bgcolor="5CDB95">
+    <form style="max-width:500px;margin:auto">
+       <br>  <h2><font color="#05386B" face="Garamond">Verification</font></h2>
+
+       
+
+    <h5><i class="fa fa-drivers-license icon"></i> Identity  Proof<br><br>
+    <input type="file" id="Adhaar file" name="proof" required/></h5>
+
+    <div class="input-container">
+        <i class="fa fa-phone icon"></i>
+        <input class="input-field" type=" text" placeholder="Phone Number*" pattern="[0-9]{10}" name="phnum" required/>
+    
+    <button><font size="4">Verify</font></button><br><br></div>
+
+    <div id="countdown">
+    <script type="text/javascript">
+
+    var timeleft = 30;
+var downloadTimer = setInterval(function(){
+  if(timeleft <= 0){
+    clearInterval(downloadTimer);
+    document.getElementById("countdown").innerHTML = "<button> Resend OTP </button>";
+  } else {
+    document.getElementById("countdown").innerHTML = timeleft + " seconds remaining";
+  }
+  timeleft -= 1;
+}, 1000);
+</script></div><br>
+    
+    
+
+    <div class="input-container">
+    <i class="fa fa-commenting icon"> </i>
+    <input class="input-field" type="text" placeholder="Enter OTP*"pattern="[0-9]{4}" name="otp">
+    <button><font size="4">Verify</font></button><br><br>
+</div>
+
+<h3>Payment Method :</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+              <br><button>Pay Now</button>
+              
+  </div>
+    
+    
+
+    <br><button type="submit" class="btn">Register</button><br>
+    <a href="index.html"><br><button class="btn" type="button">Home</button></a>
+    </form>
+</body>
+</html>
