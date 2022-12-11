@@ -1,0 +1,169 @@
+<html>
+
+<head>
+	
+	<link rel="stylesheet" href="grkcss.css">
+</head>
+
+<body>
+	<div class="full">
+		<div class="left">
+			<img id="myImg" src="13.jpg" alt="Snow" style="width:100%" height="350px">
+
+
+<div id="myModal" class="modal">
+
+  
+  <span class="close">&times;</span>
+
+  
+  <img class="modal-content" id="img01">
+
+ 
+  <div id="caption"></div>
+</div>
+<script>
+  var modal = document.getElementById("myModal");
+
+
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+			<div class="Contact">
+				
+				
+<br><p><font color="white"><b>Name :</b> Gowtham Reddy. S</font></p>
+<p><font color="white"><b>Mobile no:</b>98898XXXXX</font></p>
+
+
+			</div>
+			<div class="Skills">
+				<h2><font color="white">Skills</font></h2>
+				<ul>
+					<li><font color="white"><b>Programming Languages :
+					Python, Java, C, C#</font></b></li>
+					<li><font color="white"><b>Frontend : HTML5, CSS3,
+					JavaScript</font></b></li>
+					<li><font color="white"><b>Backend : MYSql</b></font></li>
+				</ul>
+			</div>
+			<div class="Language">
+				<h2><font color="white">Language</font></h2>
+				<ul>
+					<li><font color="white">English</font></li>
+					<li><font color="white"></font></li>
+				</ul>
+			</div>
+			<div class="Hobbies">
+				<h2><font color="white">Hobbies</font></h2>
+				<ul>
+					<li><font color="white">Hackathon</font></li>
+					<li><font color="white">Capture The Flag</font></li>
+				</ul>
+			</div>
+		</div>
+		<div class="right">
+			<div class="name">
+                <h1 align="center">Resume</h1>
+            </div>
+			
+				<h3 align="right">Contact</h3>
+				<p align="right"><a href=https://www.linkedin.com/in/gowtham-reddy-sirekolam-a884b1222/ >linkedIn</a></p>
+				<p align="right"><a href="https://github.com/SGowthamReddy2/SGowthamReddy2">github</a></p>
+			
+			<div class="Summary">
+				<h2>About Me</h2>
+				<p>I am an Ethical Hacking enthusiast who is currently pursuing B Tech in Cyber Security at Amrita Vishwa Vidhyapeetham, Chennai. A techie who has foundational knowledge in Computer Science subjects and is exploring new skills every day.
+
+					<br><br>I aim to implement my knowledge and strengths to rectify real scenario-based problems and grab every little or big opportunity.</p>
+				
+
+
+
+			</div>
+			<div class="Experience">
+				<h2>Objective</h2>
+				
+
+<p>Seeking a position that utilizes my skills in Cyber Security department.
+				</p>
+			</div>
+			<div class="Education">
+				<h2>Education</h2><br>
+				<table>
+					<tr>
+						<th>School/college </th><th></th>
+						<th>Passing year </th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th>
+						<th>Marks/cgpa</th>
+						<th>certificate</th>
+					</tr>
+					<tr><tr></tr><tr></tr><tr></tr><tr></tr>
+						<td>Indus School</td><td></td>
+						<td>2019</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+						<td>9.8</td>
+
+						<td>
+							<script>
+								function clicked(){
+									if(img==1){
+										document.getElementById("img").style.display="inline"
+										return img=0
+									}else{
+										document.getElementById("img").style.display="none"
+										return img=1
+									}
+								}
+							</script>
+							<input type="button" value="10th certificate"  id="btn" onclick="clicked()"/><br><br>
+							<img id="img" src="1.jpg" height="300" width="400"/>
+
+						</td>
+					</tr>
+					<tr><tr></tr><tr></tr><tr></tr><tr></tr>
+						<td>Narayana</td><td></td>
+						<td>2021</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+						<td>450</td>
+						<td>
+							<script>
+								function clicked1(){
+									if(img1==1){
+										document.getElementById("img1").style.display="inline"
+										return img1=0
+									}else{
+										document.getElementById("img1").style.display="none"
+										return img1=1
+									}
+								}
+							</script>
+							<input type="button" value="12th certificate"  id="btn1" onclick="clicked1()"/><br><br>
+							<img id="img1" src="2.jpg" height="300" width="400"/>
+							
+
+						</td>
+					</tr>
+				</table>
+			</div>
+			
+		
+			
+			
+			
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
