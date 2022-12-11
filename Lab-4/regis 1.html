@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Registration From
+    </title>
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+
+
+
+<body bgcolor="5CDB95">
+    <form style="max-width:500px;margin:auto">
+       <br>  <h2><font color="#05386B" face="Garamond">Professional Details</font></h2>
+        
+      
+
+       <div class="input-container">
+        <i class="fa fa-university icon"></i>
+        <input class="input-field" type="text" placeholder="University Name*" name="uninm"/>
+      </div>
+     
+             
+        <h3>Intrested Event(s)* :</h3>
+        <table>
+            <tr>
+                <td>
+                    <input type="checkbox" name="Event" id="Event"/>
+        <label for="inaugofACN22">Inaguration of ACN'22 Eventst 22</label>
+
+                </td>
+                <td>
+                    <input type="checkbox" name="Event" id="Event"/>
+                    <label for="cybrindmet">Cyber industry Meet </label><br>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="Event" id="Event"/>
+        <label for="ntlartcyb">Natioinal Amrita Cyber Tech Fest 22</label>
+
+                </td>
+                <td>
+                    <input type="checkbox" name="Event" id="Event"/>
+        <label for="aybabyn22">Cyber Abyan</label>
+
+                </td>
+
+            </tr>
+        </table><br>
+        <h3>Designation*</h3>
+        <input type="radio" name="des" id="stu"/>
+        <label for="student">Student</label><br>
+        <input type="radio" name="des" id="facmem"/>
+        <label for="Faculty Member">Faculty Member</label><br>
+        <input type="radio" name="des" id="resoler"/>
+        <label for="Research Scholar">Research Scholar</label><br>
+        <input type="radio" name="des" id="IndPrsn"/>
+        <label for="Industry Person">Industry Person</label><br>
+        <input type="radio" name="des" id="others"/>
+        <label for="others">others</label>
+        <input type="text" name="other" placeholder="Enter here" id="other"/><br>
+        
+
+        <h3>Department*
+        <input type="text" name="dep" id="dep"/><br></h3>
+        
+       <br><div class="input-container">
+        <i class="fa fa-users icon"></i>
+        <input class="input-field" type="text" placeholder="Team Size*" pattern="[0-9]{1}" name="tmsz"/>
+      </div>
+
+      
+       <h5> <i class="fa fa-id-card icon"></i> ID Card*<br><br>
+        <input type="file" id="Id file" name="Id proof" required/></h5>
+        
+      
+      <h4> <i class="fa fa-briefcase icon"></i>
+      Experience :</h4> 
+      <textarea  name="expe" rows="6" cols="65" placeholder="mention about your experience on Projects you have done before..."></textarea>
+    </form>
+    
+    <br><table align="center" ><tr><td><a href="ver.html"><button style="background-color:dodgerblue; border: 0ch;"><font size="5" color="white" face="Trebuchet MS">Verification</font></button></a></td></tr></table>
+    <table align="center" ><tr><td><a href="index.html"><button style="background-color: dodgerblue; border: 0ch;"><font size="5" color="white" face="Trebuchet MS">Home</font></button></a></td></tr></table>
+
+       
+      
+
+
+</body>
+</head>
+</html>
