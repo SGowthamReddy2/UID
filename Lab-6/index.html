@@ -1,0 +1,51 @@
+<html>
+ <head>
+    <link rel="stylesheet" href="2.css">
+ <title>epf</title>
+ 
+   <script>
+    
+    function FV1()
+    {
+        var FV,PV,R,N,N1,N2,sav,div,par1,par2,par3,MN,MNT;
+        PV=parseInt(document.getElementById("1").value);
+        R=parseInt(document.getElementById("2").value);
+        N1=parseInt(document.getElementById("4").value);
+        N2=parseInt(document.getElementById("3").value);
+        sav=parseInt(document.getElementById("5").value);
+        div=R/100;
+        N=N1-N2;
+        par1=1+div;
+        par2=Math.pow(par1,N);  
+        par3=PV*par2;
+        FV=par3-sav;
+        document.getElementById("ans").value=FV;
+        MN=N*12;
+        MNT=FV/MN;
+        document.getElementById("MNT1").value=MNT;
+      
+
+    }
+    function rs(){resetBtn.addEventListener('click', () => {
+    window.location.reload();
+});}
+
+    </script>
+
+
+    </head>
+ <body>
+   <div class="i">
+      <h2><font face="cursive">Marrige Expenditure Calculator</h2></font> &nbsp;         
+    <p>Enter Current Marriage Expense <input id="1" class="w" placeholder="In Rupees"></p> 
+    <p>Expected Inflation Rate (P.A)  <input id="2"class="w" placeholder="In %"></p>
+    <p>Enter Current Age Of Your Child  <input id="3"class="w" placeholder="In YEARS"></p>
+    <p>Enter Child's age at the time of marriage <input id="4"class="w" placeholder="In YEARS"></p>
+    <p>Enter already saved for your child?<input id="5"class="w" placeholder="In Rupees"></p>
+    <p>Future Amount for Marriage <font color="#1678fb"><output id="ans"></output></font></p>
+    <P>Investment Required Per Month is <font color="#1678fb"><output id="MNT1"></output></font></P>
+    <button onclick="FV1()" class="calculate">Calculate</button>
+   </div>
+   
+</body>
+</html>
