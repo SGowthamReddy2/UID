@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Registration Form
+    </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
+</head>
+
+<body background="55.jpg">
+    <br><h2 align=center><b>Registration Form<b></h2>
+      <form>
+        <h4>Name :</h4>
+        <input type="text" placeholder="First name" name="First Name" required/><br><br>  <input type="text"  placeholder="Last Name"name="Last Name" required/>
+        <h4>Email Id :  </h4>
+        <input type="email"placeholder="youremail id@gmail.com"  name="Email Id" required/>
+        <h4>Confirm Email Id :  </h4>
+        <input type="email" placeholder="youremail id@gmail.com" name="Email Id" required/>
+        <h4>Sex :</h4>
+        <input type="radio" name="Sex" id="Male"/>
+        <label for="Male">Male</label>
+        <br>
+        <input type="radio" name="Sex" id="Female"/>
+        <label for="Female">Female</label>
+        <h4>Date Of Birth :</h4>
+        <input type="date"> 
+        <h4>Collage Name :</h4>
+          <input type="text" minlength="5" name="Collage Name" id="collage"/>
+        <h4>Mobile Number :</h4>
+        <input type="text" pattern="[0-9]{10}" required/>
+        <h4>Team Size :</h4>
+         <input type="text" pattern="[0-9]{1}" required/><br><br>
+          <h4>Select Event :
+          <select name="Event" id="Event">
+                    <option value="none" selected disabled hidden> Select an Event</option>
+                    <option value="Hackathon">Hackathon</option>
+                    <option value="Website Designing">Website Designing</option>
+                    <option value="Ethical hacking">Ethical Hacking</option>
+                    <option value="Project Presentation">Project Presentation</option>
+                    </select></h4>
+        <br><input type="submit" value="submit">
+        <input type="reset" value="reset">
+      </form>
+
+        <br><br><button><a href="index.html">Home</a></button>
+        <table align="right">
+          <tr>
+              <td>
+                  <font size="4"><button><a href="https://www.computing.co.uk/contact">Contact Us</a></button></font>
+              </td>
+          </tr>
+
+      </table>
+      <table align="left">
+        <tr>
+            <td>
+                <button class="g-recaptcha" 
+        data-sitekey="reCAPTCHA_site_key" 
+        data-callback='onSubmit' 
+        data-action='submit'>Submit</button>
+
+            </td>
+        </tr>
+      </table>
+      
+    </body>
+</html>
